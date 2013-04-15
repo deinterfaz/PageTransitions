@@ -1,0 +1,304 @@
+@font-face {
+  font-family: 'helveticaregular';
+  src: url('../font/helvecon-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+font-family: "helveticaregular", Helvetica, sans-serif;
+}
+
+a, input[type="submit"] {
+color: #283e72;
+text-decoration: none;
+border-bottom: 1px dotted #5aa6ff;
+-webkit-transition: all .11s linear;
+-moz-transition: all .11s linear;
+-o-transition: all .11s linear;
+transition: all .11s linear;
+}
+
+h1, h2, h3 {
+margin: 0;
+
+line-height: .9em;
+letter-spacing: .02em;
+text-transform: uppercase;
+}
+
+h1 {
+display: table;
+float: left;
+height: 100%;
+padding: 0 20px 0 30px;
+font-size: 35px;
+}
+
+h1 a {
+display: table-cell;
+vertical-align: middle;
+color: black;
+text-decoration: none;
+border: 0;
+-webkit-transition: 0;
+-moz-transition: none;
+-o-transition: 0;
+transition: 0;
+}
+
+body {
+padding: 0;
+margin: 0;
+
+background: rgb(255, 255, 255);
+color: #222;
+overflow-y: scroll!important;
+}
+
+
+body {
+line-height: 1;
+}
+body, header {
+min-width: 890px;
+}
+
+header{
+	display: block;
+	position: fixed;
+width: 100%;
+height: 90px;
+left: 0;
+top: 0;
+z-index: 100;
+background: white;
+color: black;
+border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+header:after {
+content: "";
+position: absolute;
+bottom: -20px;
+left: 0;
+width: 100%;
+height: 20px;
+z-index: 101;
+-webkit-box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
+-moz-box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
+box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
+}
+header nav {
+position: absolute;
+right: 0;
+display: block;
+}
+
+header nav li {
+display: block;
+float: left;
+border: 5px solid #000;
+background: #f00;
+text-shadow: 0 0 2px rgba(0,0,0,0.2);
+background-image: -webkit-gradient(radial,50% 50%,0,50% 50%,70,from(rgba(255,255,255,0.2)),to(rgba(255,255,255,0.0)));
+background-image: -moz-radial-gradient(50% 50% 90deg,ellipse closest-side,rgba(255,255,255,0.2) 0,rgba(255,255,255,0.0) 100%);
+-webkit-transition: border-color .15s linear;
+-moz-transition: border-color .15s linear;
+-o-transition: border-color .15s linear;
+transition: border-color .15s linear;
+text-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
+
+header nav li.twitter{
+background: url('img/twitter.png');
+background-color: #00aced;
+background-repeat: no-repeat; 
+background-size: contain;
+background-position-x: center;
+border-color: #00aced;
+}
+header nav li.twitter:hover {
+border-color: #3671e7;
+}
+header nav li.web{
+background-color: #336600;
+border-color: #336600;
+}
+
+header nav li.github{
+background: url('img/octocat.png');
+background-color: #00aced;
+background-repeat: no-repeat; 
+background-size: contain;
+background-position-x: center;
+background-color: #fff;
+border-color: #fff;
+}
+header nav li.github:hover {
+border-color:rgb(192, 192, 192);
+}
+
+
+header nav a {
+display: table;
+height: 80px;
+border: 0;
+outline: 0;
+color: black;
+text-transform: uppercase;
+
+font-size: 20px;
+-webkit-transition: 0;
+-moz-transition: none;
+-o-transition: 0;
+transition: 0;
+}
+
+header nav a span {
+padding: 0 30px 0 30px;
+display: table-cell;
+vertical-align: middle;
+}
+
+#main {
+position: relative;
+width: 100%;
+margin-top: 110px;
+padding: 20px 0;
+overflow: hidden;
+
+}
+#main>div {
+margin-bottom: 10px;
+padding-bottom: 20px;
+}
+#grid{
+	position: relative;
+	
+	width: 1140px;
+	left: 50%;
+	margin-left: -562.5px;
+}
+
+
+article {
+display: block;
+float: left;
+margin: 10px 5px;
+padding: 15px;
+width: 330px;
+border-radius: 4px;
+border: 1px #ddd solid;
+text-align: justify;
+display: block;
+background: #89b32f;
+color: white;
+position: relative;
+}
+
+
+article:before, article:after {
+content: "";
+position: absolute;
+bottom: 18px;
+left: 10px;
+width: 80%;
+height: 20%;
+max-width: 300px;
+z-index: -2;
+-webkit-box-shadow: 0 19px 25px rgba(0,0,0,0.7);
+-moz-box-shadow: 0 19px 25px rgba(0,0,0,0.7);
+box-shadow: 0 19px 25px rgba(0,0,0,0.7);
+-webkit-transform: rotate(-5deg);
+-moz-transform: rotate(-5deg);
+-ms-transform: rotate(-5deg);
+-o-transform: rotate(-5deg);
+transform: rotate(-5deg);
+}
+article:after {
+left: auto;
+right: 10px;
+-webkit-transform: rotate(1deg);
+-moz-transform: rotate(1deg);
+-ms-transform: rotate(1deg);
+-o-transform: rotate(1deg);
+transform: rotate(1deg);
+}
+article .image-link {
+overflow: hidden;
+position: relative;
+}
+article .image-link:hover {
+border-color: rgb(10, 124, 0);
+}
+article .image-link, article .image-wrapper {
+border: 5px #89b32f solid;
+margin: 5px 0;
+display: inline-block;
+line-height: 0;
+-webkit-transition: border-color .2s ease-out;
+-moz-transition: border-color .2s ease-out;
+-o-transition: border-color .2s ease-out;
+transition: border-color .2s ease-out;
+}
+article .image-link.caption p, article .image-link.caption img {
+-webkit-transition: all .2s ease-out;
+-moz-transition: all .2s ease-out;
+-o-transition: all .2s ease-out;
+transition: all .2s ease-out;
+}
+article .image-link img {
+border: 0;
+outline: 0;
+}
+article .image-link.caption:hover img {
+margin-left: 100px;
+margin-right: -100px;	
+}
+
+article .image-link.caption p {
+
+display: block;
+position: absolute;
+left: -100px;
+width: 100px;
+height: 100%;
+top: 0;
+text-align: center;
+letter-spacing: .03em;
+margin: 0;
+padding: 87px 0 8px 0;
+
+font-size: 15px;
+text-indent: 10px;
+background: white;
+color: black;
+-webkit-box-shadow: 0 -2px 6px rgba(0,0,0,0.1) inset;
+-moz-box-shadow: 0 -2px 6px rgba(0,0,0,0.1) inset;
+box-shadow: 0 -2px 6px rgba(0,0,0,0.1) inset;
+-webkit-transition: bottom,background 300ms,300ms cubic-bezier(0.260,0.860,0.440,0.985);
+-moz-transition: bottom,background 300ms,300ms cubic-bezier(0.260,0.860,0.440,0.985);
+-o-transition: bottom,background 300ms,300ms cubic-bezier(0.260,0.860,0.440,0.985);
+transition: bottom,background 300ms,300ms cubic-bezier(0.260,0.860,0.440,0.985);
+}
+article .image-link:hover p{
+	left: 0;
+}
+article p {
+margin: 20px 0;
+word-spacing: -0.1em;
+}
+p {
+line-height: 1.4em;
+}
+
+.credit{
+	float: right;
+font-size: 19px;
+}

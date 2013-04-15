@@ -1,0 +1,17 @@
+# Page Transitions
+
+A rework of the original idea created by Hakim El Hattab. Created using JavaScript, CSS 3D transforms and CSS Animations.
+
+## Transitions
+ - Kontext: Original idea by Hakim El Hattab
+ - Put On: A page drop effect
+ - 
+
+
+[Check out the demo page](http://www.deinterfaz.com/labs/pagetransitions).
+
+## License
+
+MIT licensed
+
+Copyright (C) 2013 deinterfaz, http://deinterfaz.com
