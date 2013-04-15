@@ -11,7 +11,7 @@ A rework of the original idea created by Hakim El Hattab. Created using JavaScri
  
 
 
-[Check out the demo page](http://www.deinterfaz.com/labs/pagetransitions).
+[Check out the demo page](http://labs.deinterfaz.com/PageTransitions).
 
 ## License
 
