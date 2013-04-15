@@ -5,7 +5,10 @@ A rework of the original idea created by Hakim El Hattab. Created using JavaScri
 ## Transitions
  - Kontext: Original idea by Hakim El Hattab
  - Put On: A page drop effect
- - 
+ - Circle: Layers do a circle transition
+ - Bounce: Layers bounce after showing 
+ - Flip: 360º flip
+ 
 
 
 [Check out the demo page](http://www.deinterfaz.com/labs/pagetransitions).
